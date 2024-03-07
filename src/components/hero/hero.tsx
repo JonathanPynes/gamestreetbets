@@ -1,4 +1,3 @@
-import { NewsletterForm } from '@/components/newsletter-form'
 import { cn } from '@/utils/cn'
 import type { ReactNode } from 'react'
 import { useEffect, useRef } from 'react'
@@ -35,14 +34,6 @@ function Hero({
     return () => ScrollReveal().destroy()
   }, [])
 
-  function onNewsletterSubmit(values: any) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({ values })
-      }, 1000)
-    })
-  }
-
   const addToScrollRevealRef = (el: ScrollRevealRefElement) => {
     scrollRevealRef.current.push(el)
   }
@@ -62,11 +53,15 @@ function Hero({
             </div>
 
             <div ref={addToScrollRevealRef}>
-              <NewsletterForm
-                className="mx-auto mt-8 max-w-md lg:mx-0"
-                submitText="Get early access"
-                onSubmit={onNewsletterSubmit}
-              />
+              <a
+                href="https://forms.gle/Arwe2UTPVWA3jmgc7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="mt-4 inline-flex cursor-pointer justify-center whitespace-nowrap rounded-full border-0 bg-gradient-to-r from-secondary-500 to-secondary-400 px-7 py-3 text-center font-medium leading-4 text-white no-underline shadow-lg">
+                  Get Early Access
+                </button>
+              </a>
             </div>
           </div>
 

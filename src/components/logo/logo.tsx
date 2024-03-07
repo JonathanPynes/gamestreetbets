@@ -1,35 +1,17 @@
 function Logo({ className }: { className?: string }) {
   return (
-    <svg
-      className={className}
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
-      <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="logo-b">
-          <stop stopColor="#A8A3F6" offset="0%" />
-          <stop stopColor="#c7d2fe" offset="100%" />
-        </linearGradient>
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_31_9)">
         <path
-          d="M27.098 7.53l-9.441 9.44a8.084 8.084 0 0 0-.625.702 8 8 0 0 0 12.173 10.377l9.24-9.24A16.02 16.02 0 0 1 39 23c0 8.837-7.163 16-16 16S7 31.837 7 23 14.163 7 23 7c1.416 0 2.79.184 4.098.53z"
-          id="logo-a"
+          d="M16.0001 2.66663C8.64008 2.66663 2.66675 8.63996 2.66675 16C2.66675 23.36 8.64008 29.3333 16.0001 29.3333C23.3601 29.3333 29.3334 23.36 29.3334 16C29.3334 8.63996 23.3601 2.66663 16.0001 2.66663ZM17.1734 23.68V25.3333H14.8401V23.6133C13.8534 23.3733 11.6534 22.5866 10.8134 19.6666L13.0134 18.7733C13.0934 19.0666 13.7867 21.56 16.2134 21.56C17.4534 21.56 18.8534 20.92 18.8534 19.4133C18.8534 18.1333 17.9201 17.4666 15.8134 16.7066C14.3467 16.1866 11.3467 15.3333 11.3467 12.2933C11.3467 12.16 11.3601 9.09329 14.8401 8.34663V6.66663H17.1734V8.31996C19.6267 8.74663 20.5201 10.7066 20.7201 11.2933L18.6134 12.1866C18.4667 11.72 17.8267 10.4 16.0801 10.4C15.1467 10.4 13.6667 10.8933 13.6667 12.2533C13.6667 13.52 14.8134 14 17.1867 14.7866C20.3867 15.8933 21.2001 17.52 21.2001 19.3866C21.2001 22.8933 17.8667 23.56 17.1734 23.68Z"
+          fill="black"
         />
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="logo-d">
-          <stop stopColor="#c7d2fe" offset="0%" />
-          <stop stopColor="#818cf8" offset="100%" />
-        </linearGradient>
-        <path
-          d="M27.098 7.53l-9.441 9.44a8.084 8.084 0 0 0-.625.702 8 8 0 0 0 12.173 10.377l9.24-9.24A16.02 16.02 0 0 1 39 23c0 8.837-7.163 16-16 16S7 31.837 7 23 14.163 7 23 7c1.416 0 2.79.184 4.098.53z"
-          id="logo-c"
-        />
-      </defs>
-      <g transform="translate(-7 -7)" fill="none" fillRule="evenodd">
-        <use fill="url(#logo-b)" transform="rotate(45 23 23)" xlinkHref="#logo-a" />
-        <use fill="url(#logo-d)" transform="scale(-1 1) rotate(45 0 -32.527)" xlinkHref="#logo-c" />
       </g>
+      <defs>
+        <clipPath id="clip0_31_9">
+          <rect width="32" height="32" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   )
 }
